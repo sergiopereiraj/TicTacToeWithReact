@@ -44,7 +44,7 @@ const TicTacToe = () => {
 
 	const handleClick = num => {
 		if (cells[num] !== "") {
-			alert("already clicked");
+			alert("Ups! busy");
 			return;
 		}
 
@@ -74,7 +74,7 @@ const TicTacToe = () => {
 	return (
 		<div className="container">
 			<table>
-				Turn: {turn}
+				<p id="turn">Turn: {turn}</p>
 				<tbody>
 					<tr>
 						<Cell num={0} />
@@ -95,8 +95,13 @@ const TicTacToe = () => {
 			</table>
 			{winner && (
 				<>
-					<p>{winner} is the winner!</p>
-					<button onClick={() => handleRestart()}>Play Again</button>
+					<p id="winner">{winner} is the winner!</p>
+					<button
+						type="button"
+						className="btn btn-danger"
+						onClick={() => handleRestart()}>
+						Play Again
+					</button>
 				</>
 			)}
 		</div>

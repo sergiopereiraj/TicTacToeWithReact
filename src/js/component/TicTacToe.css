@@ -1,17 +1,47 @@
-.app{
-    
+h1{
+	font-size: 80px;
+}
+#titulo{
+	justify-content: center;
+	flex-direction: row;
+	color: yellow;
+}
+#jugadores{
+	color:yellowgreen;
+	font-size: 25px;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+
+.cell{
+	justify-content: center;
+	align-items: center;
+	color: yellowgreen
 }
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-    background: greenyellow;
-    
+    background: grey;
+	width: 900px;
+	height: 150%;
 }
 
-table td {
-	border: 1px solid grey;
+table td{
+	border: 1px solid yellow;
 	width: 100px;
 	height: 100px;
+	color: red;
+	font-size: 60px;
+	text-align: center;
+	}
+#turn{
+	color:orange;
+	font-size: 30px;
+}
+#winner{
+	color: red;
+	font-size: 60px;
 }
